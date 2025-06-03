@@ -1,0 +1,47 @@
+GET		/socio/findAll		// Obtener todos los socios
+GET		/socio/find/{id}	// Obtener un socio por ID
+POST		/socio/save		// Crear un nuevo socio
+	{
+  "nombreSocio": "Juan",
+  "apellidoSocio": "Pérez",
+  "direccionSocio": "Calle del Mar, 123",
+  "telefonoSocio": "600123456"
+}
+PUT		/socio/update/{id}	// Actualizar un socio existente
+DELETE	/socio/delete/{id}	// Eliminar un socio
+_________________________________________________________________________
+
+GET     	/barco/findAll	            // Obtener todos los barcos
+GET     	/barco/find/{id}	// Obtener un barco por ID
+POST   	/barco/save             	// Crear un nuevo barco
+{
+  "matriculaBarco": "1234XYZ",
+  "nombreBarco": "Nautilus",
+  "numeroAmarre": 42,
+  "cuotaBarco": 300.50,
+  "idSocio": 1
+}
+PUT	     	/barco/update/{id}    	// Actualizar un barco existente
+DELETE 	/barco/delete/{id}	// Eliminar un barco
+_________________________________________________________________________
+
+GET     	/viaje/findAll		// Obtener todos los viajes
+GET		/viaje/find/{id}	// Obtener un viaje por ID
+POST		/viaje/save		// Crear un nuevo viaje
+{
+  "fechaHora": "2025-06-01 18:00:00",
+  "destino": "Ibiza",
+  "idBarco": 1,
+  "idPatronSocio": 2
+}
+{
+  "fechaHora": "2025-06-01 18:00:00",
+  "destino": "Ibiza",
+  "idBarco": 1,
+  "nombrePatron": "Pedro",
+  "apellidoPatron": "Martínez",
+  "telefonoPatron": "666777888"
+}
+
+PUT		/viaje/update/{id}	// Actualizar un viaje existente
+DELETE	/viaje/delete/{id}	// Eliminar un viaje
