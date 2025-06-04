@@ -1,4 +1,4 @@
-# ⛵ Proyecto Final DAM - Gestión de Club Náutico
+# ⛵ Proyecto Final Prácticas 1º DAM - Gestión de Club Náutico
 
 Este es un sistema de gestión de un **club náutico** desarrollado con **Java**, **Spring Boot**, **JPA/Hibernate** y **MySQL**. Permite administrar **socios**, **barcos**, y **viajes o salidas al mar**, utilizando una arquitectura organizada por capas: controladores, servicios, repositorios y persistencia.
 
